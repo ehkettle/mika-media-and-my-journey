@@ -4,16 +4,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Footer } from "@/components/footer"
 
 export default function PhotographyPage() {
-  // Photography categories
+  // Photography categories - removed Portraits and Events
   const categories = [
     { id: "landscapes", name: "Landscapes" },
     { id: "street", name: "Street" },
     { id: "architecture", name: "Architecture" },
-    { id: "portraits", name: "Portraits" },
-    { id: "events", name: "Events" },
   ]
 
-  // Images for each category - using Mika's actual photos
+  // Images for each category - using Mika's actual photos and removing placeholders
   const images = {
     landscapes: [
       {
@@ -88,21 +86,6 @@ export default function PhotographyPage() {
         title: "Green Corridor",
         description: "Urban planning at its best - a peaceful green pathway through the city",
       },
-      // Placeholders for remaining street images
-      {
-        id: "street-3",
-        src: "/placeholder.svg?height=700&width=700",
-        alt: "Street photo 3",
-        title: "Urban Rhythm",
-        description: "Candid street photography by Mika",
-      },
-      {
-        id: "street-4",
-        src: "/placeholder.svg?height=700&width=700",
-        alt: "Street photo 4",
-        title: "City Pulse",
-        description: "Candid street photography by Mika",
-      },
     ],
     architecture: [
       {
@@ -119,36 +102,7 @@ export default function PhotographyPage() {
         title: "Urban Curves",
         description: "Elegant lines of a modern pedestrian bridge",
       },
-      // Placeholders for remaining architecture images
-      {
-        id: "architecture-3",
-        src: "/placeholder.svg?height=700&width=700",
-        alt: "Architecture photo 3",
-        title: "Geometric Patterns",
-        description: "Architectural photography by Mika",
-      },
-      {
-        id: "architecture-4",
-        src: "/placeholder.svg?height=700&width=700",
-        alt: "Architecture photo 4",
-        title: "Urban Spaces",
-        description: "Architectural photography by Mika",
-      },
     ],
-    portraits: Array.from({ length: 4 }, (_, i) => ({
-      id: `portrait-${i + 1}`,
-      src: `/placeholder.svg?height=800&width=600`,
-      alt: `Portrait photo ${i + 1}`,
-      title: `Portrait Study ${i + 1}`,
-      description: "Expressive portrait photography by Mika",
-    })),
-    events: Array.from({ length: 4 }, (_, i) => ({
-      id: `event-${i + 1}`,
-      src: `/placeholder.svg?height=600&width=800`,
-      alt: `Event photo ${i + 1}`,
-      title: `Event Coverage ${i + 1}`,
-      description: "Professional event photography by Mika",
-    })),
   }
 
   return (
