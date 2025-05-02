@@ -243,7 +243,7 @@ export default function Home() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold">Autumn Landscapes Collection</h3>
                     <p className="mt-2 text-gray-500 dark:text-gray-400">
-                      A stunning series capturing the beauty of autumn in rural landscapes
+                      A stunning series capturing the beauty of autumn in rustic landscapes
                     </p>
                     <div className="mt-4 flex items-center text-sm text-gray-500">
                       <span>April 28, 2025</span>
