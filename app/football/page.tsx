@@ -24,6 +24,7 @@ export default function FootballPage() {
       position: "Holding Midfielder",
       transfermarktUrl: "https://www.transfermarkt.co.uk/elliot-kettle/profil/spieler/1021516",
       highlightVideoUrl: "https://www.youtube.com/embed/QKFWq9YeSs4",
+      thumbnail: "/images/about/elliot-football.jpg",
       youtubeUrl: "https://youtu.be/QKFWq9YeSs4?si=rWsQ-JVI4xHrqyMD",
       bio: "Elliot is a composed holding midfielder with an exceptional ability to control the tempo of the game through his passing range. His vision and distribution allow him to dictate play from deep positions, while his tactical awareness provides crucial defensive cover. His calm presence in the middle of the park helps transition defense into attack seamlessly.",
       nationality: "English and American",
@@ -68,6 +69,11 @@ export default function FootballPage() {
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
                           className="absolute top-0 left-0 w-full h-full border-0"
+                          style={{
+                            background: player.thumbnail
+                              ? `url(${player.thumbnail}) center/cover no-repeat`
+                              : undefined,
+                          }}
                         ></iframe>
                       </div>
 

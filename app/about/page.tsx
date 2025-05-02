@@ -53,7 +53,7 @@ export default function AboutPage() {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-6">My Journey</h2>
+                <h2 className="text-3xl font-bold mb-6">Elliot's Journey</h2>
                 <div className="relative aspect-square overflow-hidden rounded-lg mb-6">
                   <Image
                     src="/images/about/elliot-football.jpg"

@@ -70,7 +70,8 @@ const videoProjects = [
     description:
       "Breathtaking views of Norway's natural beauty, showcasing majestic fjords, mountains, and scenic vistas. This video captures the essence of Norway's stunning landscapes and serene environments.",
     thumbnail: "/images/photography/landscapes/golden-tree-field.jpg",
-    videoSrc: "/videos/norway2.mp4",
+    googleDriveId: "17C4JgZDgugoqmJVAeW5UXQSepGa1o7rP",
+    isGoogleDrive: true,
     duration: "0:30",
     date: "April 2025",
     director: "Mika",
